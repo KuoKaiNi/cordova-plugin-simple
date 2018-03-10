@@ -1,7 +1,2 @@
 <?xml version='1.0' encoding='utf-8'?>
-<plugin id="com.webcomm.cordova.plugin.simple" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
-    <name>simple</name>
-    <js-module name="simple" src="www/simple.js">
-        <clobbers target="cordova.plugins.simple" />
-    </js-module>
-</plugin>
+<plugin id="com.webcomm.cordova.plugin.simple" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android"><name>simple</name><js-module name="simple" src="www/simple.js"><clobbers target="cordova.plugins.simple" /></js-module><platform name="android"><config-file parent="/*" target="res/xml/config.xml"><feature name="simple"><param name="android-package" value="com.webcomm.cordova.plugin.simple.simple" /></feature></config-file><config-file parent="/*" target="AndroidManifest.xml"></config-file><source-file src="src/android/simple.java" target-dir="src/com/webcomm/cordova/plugin/simple/simple" /></platform></plugin>
